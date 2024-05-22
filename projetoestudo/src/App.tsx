@@ -1,5 +1,6 @@
 import React from 'react';
 import Soma from './Soma';
+import Concatenar from './SomaTexto';
 
 // criar um componente:
 // 1- todo componente precisa ser nomeado com a primeira letra Maiscula!
@@ -17,6 +18,7 @@ function App() {
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit distinctio nostrum aspernatur sapiente tempore at soluta repellat? Nulla corporis quos vitae reiciendis beatae odit adipisci, ratione at ab, amet quasi.</p>
       <hr></hr>
       <Soma></Soma>
+      <Concatenar></Concatenar>
     </div>
   );
 }
