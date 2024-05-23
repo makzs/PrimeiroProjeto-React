@@ -9,6 +9,14 @@ function Soma() {
     const [numero2, setNumero2] = useState('');
     const [resultado, setResultado] = useState(0);
 
+    function escreverNumero1(e : any){
+        setNumero1(e.target.value);
+    }
+
+    function escreverNumero2(e : any){
+        setNumero2(e.target.value);
+    }
+
     function clicar() {
         const soma = parseFloat(numero1) + parseFloat(numero2);
         setResultado(soma);
@@ -22,14 +30,15 @@ function Soma() {
             <input
                 type="text"
                 value={numero1}
-                onChange={(e) => setNumero1(e.target.value)}
+                // onChange={(e) => setNumero1{e.target.value}}
+                onChange={escreverNumero1}
             />
             <br />
             <label>Numero 2: </label>
             <input
                 type="text"
                 value={numero2}
-                onChange={(e) => setNumero2(e.target.value)}
+                onChange={escreverNumero2}
             />
             <br />
             <button onClick={clicar}>Somar</button>

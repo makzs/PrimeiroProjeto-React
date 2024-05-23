@@ -1,6 +1,7 @@
 import React from 'react';
 import Soma from './Soma';
 import Concatenar from './SomaTexto';
+import Contador from './Contador';
 
 // criar um componente:
 // 1- todo componente precisa ser nomeado com a primeira letra Maiscula!
@@ -19,6 +20,7 @@ function App() {
       <hr></hr>
       <Soma></Soma>
       <Concatenar></Concatenar>
+      <Contador></Contador>
     </div>
   );
 }
